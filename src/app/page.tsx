@@ -1,9 +1,15 @@
 import { ErrorBoundary } from 'next/dist/client/components/error-boundary';
-import Image from 'next/image';
-import Template from './template';
-import Error from 'next/error';
-import styles from './page.module.css';
+import Link from 'next/link';
+import styles from './page.module.scss';
+import { ROUTE_REDIRECT_TO_PAGE, ROUTE_TO_DO_LIST } from '@routes/pathes';
 
-export default function Home() {
-  return <div>Home page</div>;
-}
+interface IAppContainerProps {}
+const AppContainer: React.FC<IAppContainerProps> = (props) => {
+  return (
+    <div className={styles.container}>
+      <Link href={ROUTE_REDIRECT_TO_PAGE}>Tranferrer</Link>
+      <Link href={ROUTE_TO_DO_LIST}>To-do list</Link>
+    </div>
+  );
+};
+export default AppContainer;
