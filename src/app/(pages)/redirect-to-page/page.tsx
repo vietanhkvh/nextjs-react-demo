@@ -2,7 +2,7 @@ import styles from './style.module.scss';
 
 const Redirect = () => {
   return (
-    <div className={styles.redirectContainer}>
+    <div className={styles.container}>
       <h1>Redirect</h1>
       <a
         target='_blank'

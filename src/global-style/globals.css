@@ -1,5 +1,5 @@
 :root {
-  --max-width: 1100px;
+  --max-width: 1400px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -38,6 +38,12 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  /* spacing, padding variable */
+  --small-pading: 4px;
+  --medium-padding: calc(var(--small-pading) * 2);
+  --large-padding: calc(var(--small-pading) * 4);
+  --xl-padding: calc(var(--small-pading) * 6);
 }
 
 @media (prefers-color-scheme: dark) {
