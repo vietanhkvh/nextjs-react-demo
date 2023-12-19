@@ -5,7 +5,7 @@ import {
   ROUTE_REDIRECT_TO_PAGE,
   ROUTE_TO_DO_LIST,
 } from '@routes/pathes';
-import Header from '@component/header';
+import Header from '@component/general/header';
 import styles from './template.module.scss';
 interface ITemplateProps {
   children: React.ReactNode;

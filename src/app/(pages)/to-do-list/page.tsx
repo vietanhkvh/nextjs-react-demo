@@ -1,5 +1,3 @@
-import Template from '@app/template';
-
 const TodoList = () => {
   return <div>TodoList</div>;
 };
