@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {
   ROUTE_DEMO_LOADING_STREAM,
+  ROUTE_DEMO_PARALLEL_ROUTES,
   ROUTE_DEMO_ROUTING_CATCH_ALL_SEGMENTS,
   ROUTE_DEMO_ROUTING_OPTIONAL_CATCH_ALL_SEGMENTS,
 } from '@routes/pathes';
@@ -21,7 +22,8 @@ const RoutingTemplate: React.FC<IRoutingTemplateProps> = (props) => {
         <Link href={ROUTE_DEMO_ROUTING_OPTIONAL_CATCH_ALL_SEGMENTS}>
           Optional catch-all segements
         </Link>
-        <Link href={ROUTE_DEMO_LOADING_STREAM}>Loading & steaming</Link>
+        <Link href={ROUTE_DEMO_LOADING_STREAM}>Loading & streaming</Link>
+        <Link href={ROUTE_DEMO_PARALLEL_ROUTES}>Parallel routes</Link>
       </Header>
       {children}
     </div>
