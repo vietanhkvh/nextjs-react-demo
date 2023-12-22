@@ -1,0 +1,19 @@
+.modal {
+  min-width: 100vw;
+  min-height: 100vh;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: 0.3s all normal;
+  &.openModal {
+    visibility: visible;
+    opacity: 1;
+  }
+  .overlay {
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgb(242, 242, 242);
+  }
+}

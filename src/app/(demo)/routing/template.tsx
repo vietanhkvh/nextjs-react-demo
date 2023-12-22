@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import {
+  ROUTE_DEMO_INTERCEPTING_ROUTES,
   ROUTE_DEMO_LOADING_STREAM,
   ROUTE_DEMO_PARALLEL_ROUTES,
   ROUTE_DEMO_ROUTING_CATCH_ALL_SEGMENTS,
@@ -24,6 +25,7 @@ const RoutingTemplate: React.FC<IRoutingTemplateProps> = (props) => {
         </Link>
         <Link href={ROUTE_DEMO_LOADING_STREAM}>Loading & streaming</Link>
         <Link href={ROUTE_DEMO_PARALLEL_ROUTES}>Parallel routes</Link>
+        <Link href={ROUTE_DEMO_INTERCEPTING_ROUTES}>Intercepting routes</Link>
       </Header>
       {children}
     </div>
