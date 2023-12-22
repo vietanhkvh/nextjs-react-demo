@@ -1,0 +1,12 @@
+.templateContainer {
+  min-width: var(--max-width);
+  max-width: var(--max-width);
+  min-height: 100vh;
+  margin: 0 auto;
+
+  a {
+    &:hover {
+      color: pink;
+    }
+  }
+}
