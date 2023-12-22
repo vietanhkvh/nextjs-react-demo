@@ -1,7 +1,7 @@
-import React from 'react';
 interface IParalleRoutesLayoutProps {
   children: React.ReactNode;
-  [key: string]: any;
+  team: React.ReactNode;
+  analytics: React.ReactNode;
 }
 const ParalleRoutesLayout: React.FC<IParalleRoutesLayoutProps> = (props) => {
   const { children, team, analytics } = props;

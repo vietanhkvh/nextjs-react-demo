@@ -1,6 +1,6 @@
 interface IFeedLayout {
   children: React.ReactNode;
-  [key: string]: React.ReactNode;
+  modal: React.ReactNode;
 }
 const FeedLayout: React.FC<IFeedLayout> = (props) => {
   const { children, modal } = props;
